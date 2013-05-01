@@ -2,6 +2,7 @@ template: Hello, %s!
 defaultName: Stranger
 
 http:
+  sslAndNonSsl: true
   port: 7050
   sslPort: 7051
   adminPort: 7052

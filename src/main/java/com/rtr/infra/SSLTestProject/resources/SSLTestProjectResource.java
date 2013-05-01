@@ -35,7 +35,7 @@ public class SSLTestProjectResource {
 	
 	@GET
 	@Timed
-	@Path("sayAWESOME")
+	@Path("/sayAWESOME")
 	public String sayAWESOME() {
 		return "AWESOME";
 	}
