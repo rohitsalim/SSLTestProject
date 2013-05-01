@@ -1,0 +1,11 @@
+template: Hello, %s!
+defaultName: Stranger
+
+http:
+  port: 7050
+  sslPort: 7051
+  adminPort: 7052
+  ssl:
+    keyStore: /opt/mobile_api/keystore/mobilekeystore.jks
+    keyStorePassword: mobileAPI_ftw 
+    keyStoreType: JKS
