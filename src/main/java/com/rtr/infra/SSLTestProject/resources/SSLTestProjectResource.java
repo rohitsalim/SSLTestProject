@@ -28,12 +28,14 @@ public class SSLTestProjectResource {
 	
 	@GET
 	@Timed
+	@Path("/sayHello")
 	public Saying sayHello(@QueryParam("name") Optional<String> name) {
 		return new Saying(counter.incrementAndGet(), String.format(template, name.or(defaultName)));
 	}
 	
 	@GET
 	@Timed
+	@Path("sayAWESOME")
 	public String sayAWESOME() {
 		return "AWESOME";
 	}
